@@ -11,23 +11,30 @@ namespace Project1_RobotsVsDinosaurs
         // Dinosaurs & Objects/ Abilities
 
         // Member Variables (HAS A...)
-        string Type; // (p)Name
-        int Health;
-        double Energy;
-        string AttackPower;
+        string name;
+        int health;
+        double energy;
+        string attackPower;
         string dinoName;
+        string attackAbility;
 
-        
+
 
         // Constructor (Spawner)
-        public Dinosaur(string dinoName, int health, string attackPower )
+        public Dinosaur(string dinoName)
         {
-            this.dinoName = dinoName;
-            this.Health = health;
-            this.AttackPower = attackPower;
+            name = dinoName;
+            health = 100;
+            attackAbility = attackPower;
         }
 
         // Member Methods (Can Do)
+        
+        public void ChooseDino()
+        {
+            Console.WriteLine("Please choose your dinosaur...");
+            name = Console.ReadLine();
+        }
 
         public void DinosaurName()
         {
@@ -39,6 +46,7 @@ namespace Project1_RobotsVsDinosaurs
         }
         public void AbilityPower()
         {
+            attackAbility. // attack ability drains energy and each attack ability has different level of power that inflicts specific damage
 
         }
         public void EnergyLevel()

@@ -11,24 +11,33 @@ namespace Project1_RobotsVsDinosaurs
         // ROBOTs & OBJECTs
         
         // Member Variables (HAS A...)
-        public string name; // of character
-        Robot r2D2 = new Robot("R2D2");
-        Robot johnny5 = new Robot("Johnny 5");
-        Robot gundamWing = new Robot("Gundam Wing");
+        Robot gundamDeathScythe = new Robot(" Gundam Death Scythe");
+        Robot gundamWingZero = new Robot(" Gundam Wing Zero");
+        Robot gundamHeavyArms = new Robot(" Gundam Heavy Arms");
         List<Robot> robots = new List<Robot>();
 
-
-
+               
         // Constructor (Spawner)
         public Fleet()
         {
-
+            
 
             //robots.Add(new Robot());
             //robots[0] 
 
         }
+        public void ChooseRobot()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Please choose your robot");
+                robots.Add(new Robot(Console.ReadLine()));
 
+                //string input = Console.ReadLine();
+                //Robot bot = new Robot(input);
+                //robots.Add(bot);
+            }
+        }
         // Member Methods (Can Do)
 
     }

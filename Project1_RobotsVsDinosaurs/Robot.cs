@@ -11,21 +11,22 @@ namespace Project1_RobotsVsDinosaurs
 
 
         // Member Variables (HAS A...)
-        public string Name;
-        public int Health;
+        public string name;
+        public int health;
         public string PowerLevel;
         public Weapon weapon;
         public string roboName;
+        List<Weapon> weapons = new List<Weapon>();
 
 
         // Constructor (Spawner)
-        public Robot(string roboName, int health, string PowerLevel )
+        public Robot(string roboName)
         {
-            Name = "Choose your robot...";
-            Health = 100;
+            name = roboName;
+            health = 100;
             PowerLevel = "100";
+            health = 100;
             
-
 
             //this.roboName = roboName;
             //weapon = new Weapon();
@@ -37,7 +38,7 @@ namespace Project1_RobotsVsDinosaurs
         public void RoboName()
         {
             Console.WriteLine("Please choose your Robot...");
-            Name = Console.ReadLine();
+            name = Console.ReadLine();
         }
         public void BattleDamage()
         {
@@ -47,12 +48,10 @@ namespace Project1_RobotsVsDinosaurs
         {
 
         }
-        public void WeaponChoice()
+        public void Attack(List<Dinosaur> dinosaurs)
         {
-            Console.WriteLine("Which weapon would you like to use...");
-            weapon = Console.ReadLine();
+            dinosaurs. // robot attack decreases dinosaur health and decreases power level
         }
-
 
 
 
