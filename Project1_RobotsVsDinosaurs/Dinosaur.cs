@@ -12,16 +12,39 @@ namespace Project1_RobotsVsDinosaurs
 
         // Member Variables (HAS A...)
         string Type; // (p)Name
-        double Health;
+        int Health;
         double Energy;
         string AttackPower;
+        string dinoName;
+
+        
 
         // Constructor (Spawner)
-        public Dinosaur()
+        public Dinosaur(string dinoName, int health, string attackPower )
         {
-
+            this.dinoName = dinoName;
+            this.Health = health;
+            this.AttackPower = attackPower;
         }
 
         // Member Methods (Can Do)
+
+        public void DinosaurName()
+        {
+
+        }
+        public void BattleDamage()
+        {
+
+        }
+        public void AbilityPower()
+        {
+
+        }
+        public void EnergyLevel()
+        {
+
+        }
+        
     }
 }

@@ -11,9 +11,14 @@ namespace Project1_RobotsVsDinosaurs
         // DINOSAUR OBJECTS
 
         // Member Variables (HAS A...)
+  
+        Dinosaur sharpTooth = new Dinosaur(" Sharp Tooth ");
+        Dinosaur yoshi = new Dinosaur(" Yoshi");
+        Dinosaur godzilla = new Dinosaur(" Godzilla ");
 
 
         // Constructor (Spawner)
+
 
 
         // Member Methods (Can Do)

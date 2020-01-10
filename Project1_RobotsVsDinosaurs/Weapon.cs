@@ -14,6 +14,11 @@ namespace Project1_RobotsVsDinosaurs
 
         // Constructor (Spawner)
 
+        public Weapon()
+        {
+
+        }
+
 
         // Member Methods (Can Do)
     }

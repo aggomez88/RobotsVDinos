@@ -52,6 +52,13 @@ namespace Project1_RobotsVsDinosaurs
                     return;
             }
 
+        public void fight()
+            {
+
+            }
+
+            
+
                                  
             Console.ReadLine();
         }

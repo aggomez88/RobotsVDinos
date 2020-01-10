@@ -15,7 +15,7 @@ namespace Project1_RobotsVsDinosaurs
             List<Robot> robots = new List<Robot>();
 
             robots.Add(strongRobot);
-            
+
 
             strongRobot.weapon.type = "gun";
             Battlefield battlefield = new Battlefield();
