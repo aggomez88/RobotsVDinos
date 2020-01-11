@@ -11,16 +11,14 @@ namespace Project1_RobotsVsDinosaurs
         static void Main(string[] args)
         {
 
-            Robot strongRobot = new Robot(roboName);
+            //Robot strongRobot = new Robot(roboName);
             List<Robot> robots = new List<Robot>();
 
-            robots.Add(strongRobot);
-
-
-            strongRobot.weapon.type = "gun";
+            
             Battlefield battlefield = new Battlefield();
             battlefield.GreetUser();
 
+            battlefield.Fight();
         }
     }
 }

@@ -14,22 +14,26 @@ namespace Project1_RobotsVsDinosaurs
         public string name;
         public int health;
         public string PowerLevel;
-        public Weapon weapon;
+        public string weapons;
+        //public Weapon weapons;
         public string roboName;
-        List<Weapon> weapons = new List<Weapon>();
+
+        public List<Weapon> weaponsList = new List<Weapon>();
 
 
         // Constructor (Spawner)
-        public Robot(string roboName)
+        public Robot(string roboName, string weapons)
         {
             name = roboName;
             health = 100;
             PowerLevel = "100";
             health = 100;
+            this.weapons = weapons;
             
+            //weapons = new Weapon();
 
             //this.roboName = roboName;
-            //weapon = new Weapon();
+
 
         }
 
@@ -50,8 +54,10 @@ namespace Project1_RobotsVsDinosaurs
         }
         public void Attack(List<Dinosaur> dinosaurs)
         {
-            dinosaurs. // robot attack decreases dinosaur health and decreases power level
+            //dinosaurs. // robot attack decreases dinosaur health and decreases power level
         }
+        
+        
 
 
 

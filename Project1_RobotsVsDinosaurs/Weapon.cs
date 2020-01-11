@@ -10,19 +10,26 @@ namespace Project1_RobotsVsDinosaurs
     {
         // Member Variables (HAS A...)
         public int attackPower;
-        public string weaponType;
-        public string beamScythe;
-        public string busterRifle;
-        public string machineCannon;
+        public Weapon beamScythe;
+        public Weapon busterRifle;
+        public Weapon machineCannon;
+        public List<Weapon> weapons = new List<Weapon>();
+
+        
 
 
         // Constructor (Spawner)
 
         public Weapon()
         {
-            beamScythe = "50";
-            busterRifle = "75";
-            machineCannon = "60";
+            weapons.Add(beamScythe);
+            weapons.Add(busterRifle);
+            weapons.Add(machineCannon);
+
+            //beamScythe = "50";
+            //busterRifle = "75";
+            //machineCannon = "60";
+
         }
 
 
@@ -30,7 +37,9 @@ namespace Project1_RobotsVsDinosaurs
         
         public void Weapons()
         {
-           // use of beam scythe inflicts 50 damage on dinosaur and decreases robot energy level by 5
+
+           // use of each weapon inflicts # damage on dinosaur and decreases robot energy level by 5
+
 
         }
     }

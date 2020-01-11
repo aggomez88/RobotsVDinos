@@ -9,36 +9,50 @@ namespace Project1_RobotsVsDinosaurs
     class Fleet
     {
         // ROBOTs & OBJECTs
-        
+
+      
         // Member Variables (HAS A...)
-        Robot gundamDeathScythe = new Robot(" Gundam Death Scythe");
-        Robot gundamWingZero = new Robot(" Gundam Wing Zero");
-        Robot gundamHeavyArms = new Robot(" Gundam Heavy Arms");
-        List<Robot> robots = new List<Robot>();
+        public Robot gundamDeathScythe = new Robot("Gundam Death Scythe", "Scythe");
+        public Robot gundamWingZero = new Robot("Gundam Wing Zero", "Buster Rifle");
+        public Robot gundamHeavyArms = new Robot("Gundam Heavy Arms", "Machine Cannon");
+        public List<Robot> robots = new List<Robot>();
 
                
         // Constructor (Spawner)
         public Fleet()
         {
+
+            robots.Add(gundamDeathScythe);
+            robots.Add(gundamWingZero);
+            robots.Add(gundamHeavyArms);
+
+        }
+
+
+        // Member Methods (Can Do)
+        public Robot ChooseRobot()
+        {
+            Robot robot = robots[0];
+            Console.WriteLine("Please choose your robot");
             
 
-            //robots.Add(new Robot());
-            //robots[0] 
-
-        }
-        public void ChooseRobot()
-        {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < robots.Count; i++)
             {
-                Console.WriteLine("Please choose your robot");
-                robots.Add(new Robot(Console.ReadLine()));
-
-                //string input = Console.ReadLine();
-                //Robot bot = new Robot(input);
-                //robots.Add(bot);
+                Console.WriteLine("Press for " + i + " " + robots[i].name);  ; 
             }
+            string userinput = Console.ReadLine();
+            for (int i = 0; i < robots.Count; i++)
+            {
+                if (userinput == robots[i].name)
+                {
+                    return robots[i];
+                }
+            }
+            return robot;
         }
-        // Member Methods (Can Do)
+
+       
+        
 
     }
 }
