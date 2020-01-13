@@ -8,7 +8,7 @@ namespace Project1_RobotsVsDinosaurs
 {
     class Fleet
     {
-        // ROBOTs & OBJECTs
+               // ROBOTs & OBJECTs
 
       
         // Member Variables (HAS A...)
@@ -21,6 +21,8 @@ namespace Project1_RobotsVsDinosaurs
         // Constructor (Spawner)
         public Fleet()
         {
+            List<int> numbers = new List<int>() { 0, 1, 2, 3 };
+            robots = new List<Robot>() { new Robot("Gundam Death Scythe", "100"), new Robot("Gundam Wing Zero", "100"), new Robot("Gundam Heavy Arms", "100") };
 
             robots.Add(gundamDeathScythe);
             robots.Add(gundamWingZero);

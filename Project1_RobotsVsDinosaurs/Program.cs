@@ -19,6 +19,13 @@ namespace Project1_RobotsVsDinosaurs
             battlefield.GreetUser();
 
             battlefield.Fight();
+
+            Fleet fleet = new Fleet();
+            
+
+
+
         }
+
     }
 }

@@ -9,38 +9,52 @@ namespace Project1_RobotsVsDinosaurs
     class Weapon
     {
         // Member Variables (HAS A...)
-        public int attackPower;
-        public Weapon beamScythe;
-        public Weapon busterRifle;
-        public Weapon machineCannon;
-        public List<Weapon> weapons = new List<Weapon>();
 
-        
+        //public int attackPower;
+        public string weaponName;
+        public int battleDamage;
+        //public Weapon beamScythe;
+        //public Weapon busterRifle;
+        //public Weapon machineCannon;
+        //public List<Weapon> weapons = new List<Weapon>();
+
+
 
 
         // Constructor (Spawner)
 
-        public Weapon()
+        public Weapon(string weaponName)
         {
-            weapons.Add(beamScythe);
-            weapons.Add(busterRifle);
-            weapons.Add(machineCannon);
+            //weapons.Add(beamScythe);
+            //weapons.Add(busterRifle);
+            //weapons.Add(machineCannon);
+
+            this.weaponName = weaponName;
+            this.battleDamage = 50;
+
 
             //beamScythe = "50";
             //busterRifle = "75";
             //machineCannon = "60";
-
         }
 
 
         // Member Methods (Can Do)
-        
-        public void Weapons()
+
+        public void beamscythe()
         {
-
-           // use of each weapon inflicts # damage on dinosaur and decreases robot energy level by 5
-
+            battleDamage -= 50;
+            // use of each weapon inflicts # damage on dinosaur and decreases robot energy level by 5
 
         }
+        public void BusterRifle()
+        {
+            battleDamage -= 50;
+        }
+        public void MachineCannon()
+        {
+            battleDamage -= 50;
+        }
+        
     }
 }
